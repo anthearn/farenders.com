@@ -1,0 +1,17 @@
+:root {color-scheme:dark;font-family:Georgia,serif;background:#030303;color:#f8c75b}
+* {box-sizing:border-box}
+html,body {margin:0;min-height:100%;background:#030303}
+.hero {position:relative;isolation:isolate;overflow:hidden;display:grid;place-items:center;height:min(56rem,100svh);min-height:32rem;background:#030303}
+.table {position:absolute;inset:0;z-index:-3;perspective:650px;overflow:hidden}
+.cards {position:absolute;width:2400px;height:2400px;left:50%;top:50%;background-image:url('assets/navigation-back.png');background-size:306px 306px;background-repeat:repeat;transform:translate(-50%,-50%) rotateX(57deg) rotateZ(-5deg);transform-origin:50% 50%;filter:brightness(.49) saturate(.78)}
+.shade {position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 50%,rgba(3,3,3,.92) 0%,rgba(3,3,3,.69) 24%,transparent 53%),linear-gradient(90deg,#030303 0%,transparent 27%,transparent 73%,#030303 100%),linear-gradient(0deg,#030303 0%,transparent 25%,transparent 67%,rgba(3,3,3,.9) 90%,#030303 100%)}
+.hero-content {width:min(69%,850px);padding-bottom:1.5rem}
+h1 {margin:0;line-height:0}
+h1 img {display:block;width:100%;height:auto;filter:drop-shadow(0 3px 2px #000) drop-shadow(0 0 35px rgba(248,199,91,.1))}
+.coming-soon {display:grid;min-height:9rem;place-items:center;background:#030303;color:#907545;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;padding:1rem}
+.coming-soon p {margin:0;text-align:center}
+.anjopa-link {display:flex;align-items:center;justify-content:center;gap:.42rem;width:fit-content;margin:.85rem auto 0;color:#7c6b4a;font:500 .58rem/1 system-ui,sans-serif;letter-spacing:.12em;text-decoration:none}
+.anjopa-link img {display:block;width:4.4rem;height:auto;opacity:.9;transition:opacity .2s ease,transform .2s ease}
+.anjopa-link:hover img,.anjopa-link:focus-visible img {opacity:1;transform:translateY(-1px)}
+.anjopa-link:focus-visible {outline:1px solid #f8c75b;outline-offset:8px}
+@media(max-width:38rem) {.hero {height:auto;min-height:0;aspect-ratio:1672/1050}.hero-content{width:76%;padding-bottom:0}.table{perspective:390px}.cards{background-size:190px 190px;transform:translate(-50%,-50%) rotateX(57deg) rotateZ(-5deg)}.coming-soon{min-height:9rem;font-size:.62rem}}
